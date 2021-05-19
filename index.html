@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top-bar">
+                <div id="volume"></div>
+                <i class="material-icons">volume_up</i>
+                <span>Now Playing</span>
+                <i class="material-icons">more_horiz</i>
+            </div>
+            <div class="img-area">
+                <img src="" alt="">
+            </div>
+            <div class="song-details">
+                <p class="name">The Business (T-Mass Remix)</p>
+                <p class="artist">Tiësto</p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar"></div>
+                <div class="timer">
+                    <span class="current">0:00</span>
+                    <span class="duration"></span>
+                </div>
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="controls">
+                <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                <i id="prev" class="material-icons">skip_previous</i>
+                <div class="play-pause">
+                    <i class="material-icons">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons">skip_next</i>
+                <i id="more-music" class="material-icons">queue_music</i>
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="material-icons">queue_music</i>
+                        <span>Music List</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <ul>
+                    <li>
+                        <div class="row">
+                            <span>Drugs</span>
+                            <p>Falling In Reverse</p>
+                        </div>
+                        <span class="audio-duration">3:40</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="js/music-list.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </body>
+</html>
